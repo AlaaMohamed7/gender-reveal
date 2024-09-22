@@ -69,6 +69,7 @@ body {
 @media (max-width: 480px) {
     .boy-shoe {
         top: 30vh;
+       
         width: 400px;
     }
 }
@@ -191,8 +192,9 @@ body {
 .countdown {
     font-size: 15vw;
     font-weight: bold;
-    color: #C9E5F4;
+    color: #a5cee3;
     margin-right: 5%;
+    -webkit-text-stroke: 4px #EA9DB8;
 }
 @media (max-width: 768px) {
     .countdown {
