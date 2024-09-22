@@ -50,7 +50,7 @@ const countdownTimer = setInterval(() => {
         clearInterval(countdownTimer);
         startCelebration(); // Trigger the celebration
     }
-}, 1000000);
+}, 1000);
 
 // Function to start the celebration
 function startCelebration() {
