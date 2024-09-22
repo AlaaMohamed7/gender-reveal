@@ -45,20 +45,63 @@ body {
 }
 .boy-shoe{
     position: absolute;
-    top: -5vw;
-    left:12vw;
-    width: 50vw;
+    top: -80px;
+    left: 10%;
+    width: 800px;
     z-index: -2;
     transform: rotate(-20deg);
 }
+@media (max-width: 1200px) {
+    .boy-shoe {
+        top: 50px;
+        width: 700px;
+        left: 0px;
+    }
+}
+@media (max-width: 768px) {
+    .boy-shoe {
+        top: 20vh;
+        left:-100px ;
+        width: 600px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .boy-shoe {
+        top: 30vh;
+        width: 400px;
+    }
+}
 .girl-shoe{
     position: absolute;
-    top: -3vw;
-    left:37vw;
-    width: 50vw;
+    top: -50px;
+    left: 35%;
+    width: 800px;
     z-index: -2;
     transform: rotate(10deg);
 }
+@media (max-width: 1200px) {
+    .girl-shoe {
+        top: 70px;
+        width: 700px;
+        left: 32%;
+    }
+}
+@media (max-width: 768px) {
+    .girl-shoe {
+        top: 22vh;
+    
+        width: 600px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .girl-shoe {
+        top: 30vh;
+        width: 400px;
+    }
+}
+
 .fade-out {
     transition: opacity 1s ease-out; 
     opacity: 0; /* Fully transparent */
@@ -69,7 +112,7 @@ body {
     bottom: 0;
     left: 20%;
     margin: auto;
-    height: 480px; /* control the size */
+    height: 480px; 
     aspect-ratio: 1.8;
     --g: radial-gradient(50% 50%, #000 98%, #0000) no-repeat;
     mask: var(--g) 100% 30%/30% 50%,var(--g) 70% 0/50% 100%,var(--g) 0 50%/36% 78%,var(--g) 30% 18%/26%60%,linear-gradient(#000 0 0) bottom/95% 60% no-repeat;
@@ -82,9 +125,50 @@ body {
     padding-left: 7%;
     padding-right: 10%;
 }
+@media (max-width: 1200px) {
+    .big-cloud {
+        height: 400px;
+        width: 70%;
+        left: 15%;
+    }
+}
+@media (max-width: 768px) {
+    .big-cloud {
+        height: 320px;
+        width: 90%;
+        left: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .big-cloud {
+        height: 320px;
+        width: 90%;
+        left: 5%;
+    }
+}
+
 .boy-or-girl-img{
     width: 350px;
     animation: rotateScale 5s infinite ease-in-out;
+}
+@media (max-width: 1200px) {
+    .boy-or-girl-img {
+        width: 280px;
+        margin-left: 8%; 
+    }
+}
+@media (max-width: 768px) {
+    .boy-or-girl-img {
+        width: 240px;
+        margin-left: 7%; 
+    }
+}
+@media (max-width: 480px) {
+    .boy-or-girl-img {
+        width: 200px;
+        margin-left: 5%; 
+    }
 }
 
 @keyframes rotateScale {
@@ -116,6 +200,22 @@ body {
     width: 350px; /* Adjust size as needed */
     margin-left: 20%;
     animation: fadeIn 2s ease-in-out; /* Fade in effect */
+}
+@media (max-width: 1200px) {
+    .celebration-img {
+        width: 250px; 
+    }
+}
+@media (max-width: 768px) {
+    .celebration-img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .celebration-img {
+        width: 75px;
+    }
 }
 
 @keyframes fadeIn {
